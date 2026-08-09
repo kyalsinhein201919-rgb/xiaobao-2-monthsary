@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff6f9c">
+<title>For My 小宝 ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:#fff; font-family:'DM Sans',sans-serif;
+  background:radial-gradient(circle at 20% 10%,#6b2845 0,#28131f 35%,#100b12 100%);
+  overflow-x:hidden;
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.13;
+ background-image:radial-gradient(#fff 1px,transparent 1px);background-size:25px 25px}
+.container{width:min(940px,92%);margin:auto}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:50px 0;position:relative}
+.eyebrow{letter-spacing:5px;text-transform:uppercase;font-size:12px;opacity:.7}
+h1,h2{font-family:'Playfair Display',serif}
+h1{font-size:clamp(52px,12vw,110px);line-height:.9;margin:18px 0 25px}
+h1 span{color:#ff9fbd}
+.hero p{font-size:17px;opacity:.85}
+.btn{
+ display:inline-block;border:0;border-radius:999px;padding:14px 24px;margin-top:20px;
+ background:linear-gradient(135deg,#ff7fa8,#ffb0c9);color:#28131f;font-weight:700;
+ cursor:pointer;text-decoration:none;box-shadow:0 12px 35px #ff7fa833;
+}
+section{padding:85px 0}
+.section-title{text-align:center;font-size:42px;margin:0 0 12px}
+.sub{text-align:center;opacity:.65;margin:0 0 40px}
+.heart{font-size:30px}
+.counter{
+ display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:30px 0 10px
+}
+.counter div{background:#ffffff10;border:1px solid #ffffff18;border-radius:18px;padding:18px 22px;min-width:105px;backdrop-filter:blur(10px)}
+.counter b{display:block;font-size:28px;color:#ffabc5}.counter small{opacity:.6}
+.card{
+ background:#ffffff0d;border:1px solid #ffffff18;border-radius:28px;padding:28px;
+ box-shadow:0 20px 60px #0005;backdrop-filter:blur(12px)
+}
+.memories{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.polaroid{background:#fff;padding:10px 10px 18px;border-radius:8px;transform:rotate(-2deg);color:#24151d}
+.polaroid:nth-child(2){transform:rotate(2deg)}
+.polaroid img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.caption{text-align:center;font-family:'Playfair Display',serif;font-size:18px;padding-top:13px}
+video{width:100%;border-radius:18px;margin-top:25px;display:block;background:#000}
+.letter{max-width:720px;margin:auto;line-height:2;font-size:17px;color:#f9eaf0}
+.letter p{margin:0 0 20px}
+.reveal{max-width:650px;margin:auto;text-align:center}
+.hidden-message{display:none;margin-top:25px;animation:fade .8s ease}
+.hidden-message.show{display:block}
+.hidden-message h3{font-family:'Playfair Display',serif;font-size:35px;color:#ffabc5}
+footer{text-align:center;padding:45px 0 70px;opacity:.6}
+.float-heart{position:fixed;bottom:-30px;font-size:20px;opacity:.7;animation:float 7s linear infinite;pointer-events:none}
+@keyframes float{to{transform:translateY(-110vh) rotate(20deg);opacity:0}}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(max-width:650px){.memories{grid-template-columns:1fr}.card{padding:22px}section{padding:65px 0}.section-title{font-size:34px}}
+</style>
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">A little surprise from ကျဝ်ကျဝ်</div>
+    <h1>Happy <span>2 Months</span><br>My 小宝 ♡</h1>
+    <p>Two months with you, and I'm still choosing you every day.</p>
+    <a class="btn" href="#story">Open your surprise 💌</a>
+  </div>
+</header>
+
+<main id="story">
+<section>
+  <div class="container">
+    <h2 class="section-title">Our little milestone ♡</h2>
+    <p class="sub">June 9, 2026 → August 9, 2026</p>
+    <div class="counter">
+      <div><b>2</b><small>MONTHS</small></div>
+      <div><b>62</b><small>DAYS</small></div>
+      <div><b>∞</b><small>MORE TO GO</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">My favorite 小宝 📸</h2>
+    <p class="sub">A tiny corner for some of my favorite memories of you.</p>
+    <div class="memories">
+      <div class="polaroid">
+        <img src="assets/memory-1.jpg" alt="Memory of 小宝">
+        <div class="caption">My pretty girl ♡</div>
+      </div>
+      <div class="polaroid">
+        <img src="assets/memory-2.jpg" alt="Memory of 小宝">
+        <div class="caption">Still my favorite face.</div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:28px">
+      <h3 style="font-family:'Playfair Display',serif;font-size:25px;margin-top:0">One more memory 🎞️</h3>
+      <video controls playsinline preload="metadata">
+        <source src="assets/memory-video.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2 class="section-title">A letter for you 💌</h2>
+    <div class="card letter">
+      <p><strong>Happy 2nd Monthsary, my little Xiaobao. ♡</strong></p>
+      <p>In these two months, sometimes I wonder if you were the one who was more naughty to me, or if I was actually the one who was more naughty to you. 😂</p>
+      <p>This month, there have also been so many times when I couldn't give you as much time as I wanted to. We haven't even been able to have our VC calls like before, and honestly, I'm really missing you a lot right now.</p>
+      <p>But even when things get busy and we can't talk as much, one thing won't change — I'll always keep loving you.</p>
+      <p>Thank you for being my little Xiaobao, my favorite person, and my princess. I hope we get to make many, many more memories together.</p>
+      <p style="text-align:right">— From your ကိုကို, ကျဝ်ကျဝ် ♡</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container reveal">
+    <h2 class="section-title">One last thing… 🎁</h2>
+    <p class="sub">You have to press the button yourself.</p>
+    <button class="btn" onclick="reveal()">Don't click me 👀</button>
+    <div id="final" class="hidden-message card">
+      <div class="heart">💗</div>
+      <h3>2 months down, forever to go.</h3>
+      <p>I love you, 小宝. More than yesterday, and I'll keep choosing you tomorrow too.</p>
+      <p style="font-size:28px">♡ ♡ ♡</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  Made with love by ကျဝ်ကျဝ် · June 9, 2026 ♡
+</footer>
+
+<script>
+function reveal(){
+  document.getElementById('final').classList.add('show');
+  for(let i=0;i<28;i++){
+    setTimeout(()=>{
+      const h=document.createElement('div');
+      h.className='float-heart';
+      h.textContent=['♡','♥','💗','💖'][Math.floor(Math.random()*4)];
+      h.style.left=Math.random()*100+'vw';
+      h.style.animationDuration=(4+Math.random()*5)+'s';
+      document.body.appendChild(h);
+      setTimeout(()=>h.remove(),9000);
+    },i*70);
+  }
+  document.getElementById('final').scrollIntoView({behavior:'smooth',block:'center'});
+}
+</script>
+</body>
+</html>
